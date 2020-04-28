@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin:0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "baloo bhaina 2", "sant-serif";
+}
