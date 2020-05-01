@@ -36,3 +36,34 @@ margin-left: 0;
 .flaticon-instagram:before { content: "\f103"; }
 .flaticon-gorjeo:before { content: "\f104"; }
 .flaticon-github:before { content: "\f105"; }
+
+@media screen and (max-width: 760px){
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+          font-size: 75px;
+  font-style: normal;
+  margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+          font-size: 75px;
+  font-style: normal;
+  margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px){
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+          font-size: 50px;
+  font-style: normal;
+  margin-left: 0;
+  }
+}
+

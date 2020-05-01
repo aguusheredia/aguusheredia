@@ -5,15 +5,41 @@ body{
     font-size: 16px;
 }
 
+.contact-text-320 {
+    display: none;
+}
+
+.contact-text-m320 {
+    display: block;
+}
+
 a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
+.direct-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+}
+
 .grid-container {
     max-width: 980px;
     margin: auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 20px 130px 20px;
+    border-bottom: 1px solid #909090;
+    border-top: 1px solid #909090;
+
 }
 
 /* Header  */
@@ -55,11 +81,10 @@ li {
 /* Hero  */
 
 .hero {
-    margin-right: 0px;
     text-align: center;
 }
 .hero-grid {
-    padding: 100px 50px 50px;
+    padding: 100px 50px 0px 50px;
     height: auto;
     max-width: 80%;
     display: grid;
@@ -99,6 +124,56 @@ li {
 
 /* Hero  */
 
+/* Perfil */
+
+.perfil-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.perfil-container div {
+    padding: 10px;
+}
+
+.perfil-dates {
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.perfil-text {
+    border: 1px solid black;
+}
+
+/* Perfil */
+
+/* Project  */
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px ;
+}
+
+.project-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #909090;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.project-button {
+    padding: 10px 75px;
+    font-size: 1.2em;
+    background-color: #60E315;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+/* Project  */
+
  /* Contact  */
 
 .contact{
@@ -129,9 +204,92 @@ li {
 /* Footer  */
     
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
     height: 50px;
     background-color: black;
     border-top: 30px solid #FAA039;
 }
 
 /* Footer  */
+
+/* Media querys */
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 767px){
+    .perfil-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .perfil-dates {
+        border: 1px solid black;
+        margin: 0 20px 10px;
+    }
+    
+    .perfil-text {
+        border: 1px solid black;
+        margin: 0 20px 10px;
+    }
+    
+   
+    .project {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project-item {
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    header {
+        position: static;
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .header-name {
+        display: none;
+    }
+
+    header ul{
+        display: block;
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        margin: 20px 25px 20px;
+    }
+
+    .contact-icons {
+        font-size: .5em;
+    }
+
+    .contact-icons a {
+        margin: 0 5px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .contact-text-320 {
+        display: block;
+    }
+
+    .contact-text-m320 {
+        display: none;
+    }
+}
