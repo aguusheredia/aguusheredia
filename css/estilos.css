@@ -37,8 +37,6 @@ h2 {
     text-align: center;
     padding: 10px;
     margin: 20px 130px 20px;
-    border-bottom: 1px solid #909090;
-    border-top: 1px solid #909090;
 
 }
 
@@ -50,15 +48,21 @@ header{
     left: 0;
     right: 0;
     display: flex;
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
+    background-color: white;
+    color: black;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    margin-bottom: 20px;
 }
 
-.header-name {
-    font-size: 1.4em;
+.header-image{
+    height: 75px;
+}
+
+.header-image img {
+    height: 100%;
+    width: auto;
 }
 
 header ul {
@@ -71,6 +75,10 @@ header ul {
     padding: 0;
 }
 
+.header-links a {
+    color: rgb(0,23,68);
+}
+
 li {
     margin:0 10px;
 }
@@ -80,61 +88,34 @@ li {
 
 /* Hero  */
 
-.hero {
+.hero{
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/hero.png");
+    background-size: contain;
+    padding-top: 100px;
     text-align: center;
-    background-color: gray;
 }
-.hero-grid {
-    padding: 100px 50px 0px 50px;
-    height: auto;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat (8, 1fr);
-    grid-template-rows: repeat(4, 150px);
+.hero h1 {
+    color: rgb(90,181,140);
+    font-family: "roboto slab", "sant-serif";
+    margin-top: 5px;
 }
 
-.hero-grid div {
-    margin-right: 0;
+.hero h2 {
+    color: white;
+    font-family: "roboto slab", "sant-serif";
+    padding: 0;
+    margin-bottom: 5px;
 }
 
-.hero-js{
-    grid-row: 1 / 5;
-    grid-column: 1 / 2;
-    background-image: url("https://i.ibb.co/c3xhF6s/js.png");
-    background-repeat: no-repeat;
-    background-position: center;
+button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 40px 5px 40px;
 }
 
-.hero-css {
-    grid-row: 1 / 5;
-    grid-column: 2 / 3;
-    background-image: url("https://i.ibb.co/n6gfxSj/css.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero-html {
-    grid-row: 1 / 5;
-    grid-column: 6 / 7;
-    background-image: url("https://i.ibb.co/GTBWyPT/html.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero-logo {
-    grid-row: 1 / 5;
-    grid-column: 3 / 6;
-    background-image: url("https://i.ibb.co/mFhz29d/Logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.hero-otro {
-    grid-row: 1 / 5;
-    grid-column: 7 / 8;
-    background-color: orange;
-}
 
 /* Hero  */
 
