@@ -1,8 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: "baloo bhaina 2", "sant-serif";
+    font-family: "roboto slab", "sant-serif";
     font-size: 16px;
+}
+
+main{
+    justify-items: center;
+    align-items: center;
+    margin: auto;
 }
 
 .contact-text-320 {
@@ -71,6 +77,11 @@ header ul {
     padding-left: 0;
 }
 
+li span {
+    color: #5EBC8F;
+    margin-right: 2px;
+}
+
 .header-links {
     padding: 0;
 }
@@ -89,20 +100,24 @@ li {
 /* Hero  */
 
 .hero{
-    height: 300px;
+    height: 450px;
     width: 100%;
     background-image: url("../images/hero.png");
     background-size: contain;
     padding-top: 100px;
     text-align: center;
+    border-bottom: 20px solid #5EBC8F;
 }
 .hero h1 {
+    font-size: 48px;
     color: rgb(90,181,140);
     font-family: "roboto slab", "sant-serif";
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .hero h2 {
+    font-size: 28px;
     color: white;
     font-family: "roboto slab", "sant-serif";
     padding: 0;
@@ -112,8 +127,14 @@ li {
 button {
     background: none;
     color: white;
-    border: 1px solid white;
-    padding: 5px 40px 5px 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px 75px 15px 75px;
+}
+
+button a {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -121,9 +142,32 @@ button {
 
 /* Perfil */
 
+
+.perfil-title{
+    justify-items: center;
+    height: 50px;
+}
+
+#perfil h1 {
+    height: 50px;
+    justify-self: center;
+    margin-left: 150;
+}
+
+#perfil h1 span{
+    font-size: 48px;
+    color: #5EBC8F;
+}
+
+#perfil h3 {
+    color: #5EBC8F;
+    margin-top: 0;
+    margin-left: 175px;
+}
+
 .perfil-container {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 2fr 3fr 1fr;
 }
 
 .perfil-container div {
@@ -132,13 +176,54 @@ button {
 
 .perfil-dates {
     border: 1px solid black;
+    text-align: start;
     margin-right: 10px;
+}
+
+.perfil-education {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.education button {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.education button a{
+    color: black;
+}
+
+.cv {
+    border-radius: 25px;
+    margin-right: 100px;
+    margin: 0 100px 30px 30px;
+    background-color: #334569;
     text-align: center;
 }
 
-.perfil-text {
+.cv p {
+    color: white;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.perfil-skills {
     border: 1px solid black;
 }
+
+.perfil-skills h1 {
+    margin-bottom: 1px;
+    font-weight: 400;
+}
+
+.perfil-skills p {
+    color: #5EBC8F;
+    margin: 0;
+}
+
 
 /* Perfil */
 
@@ -203,11 +288,22 @@ button {
 footer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between; 
     padding: 0 10px;
-    height: 50px;
-    background-color: black;
+    height: 75px;
+    background-color: white;
     border-top: 30px solid #FAA039;
+}
+
+footer a {
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+footer img {
+    height: 75%;
+    width: auto;
 }
 
 /* Footer  */
