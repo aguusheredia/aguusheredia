@@ -49,10 +49,6 @@ h2 {
 /* Header  */
 
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     background-color: white;
     color: black;
@@ -75,6 +71,7 @@ header ul {
     list-style: none;
     display: flex;
     padding-left: 0;
+    font-size: 18px;
 }
 
 li span {
@@ -114,6 +111,7 @@ li {
     font-family: "roboto slab", "sant-serif";
     margin-top: 5px;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .hero h2 {
@@ -122,20 +120,71 @@ li {
     font-family: "roboto slab", "sant-serif";
     padding: 0;
     margin-bottom: 5px;
+    font-weight: 300;
 }
 
-button {
+.hero button {
     background: none;
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 5px;
     padding: 15px 75px 15px 75px;
 }
 
-button a {
+.hero button a {
     font-size: 14px;
     font-weight: 600;
 }
+
+.hero-flex {
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+    height: 150px;
+}
+
+.hero-flex button {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.hero-mayor {
+    font-size: 72px;
+    color: #5EBC8F;
+    margin-left: 20px;
+}
+
+.hero-flex-text {
+    color: white;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.hero-flex-text p {
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.hero-flex-text span {
+    font-size: 12px;
+}
+
+.hero-flex img {
+    height: 90px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.hero-wsp {
+    color: #5EBC8F;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
 
 
 /* Hero  */
@@ -143,31 +192,40 @@ button a {
 /* Perfil */
 
 
-.perfil-title{
-    justify-items: center;
+.title{
+    margin-top: 100px;
+    display: flex;
+    align-content: center;
     height: 50px;
+    margin-left: 100px;
 }
 
-#perfil h1 {
+.title span {
+    font-size: 52px;
+    color: #5EBC8F;
+    margin-left: 20px;
+}
+
+.title h1 {
     height: 50px;
+    font-weight: 400;
     justify-self: center;
-    margin-left: 150;
 }
 
-#perfil h1 span{
+.title h1 span{
     font-size: 48px;
     color: #5EBC8F;
 }
 
-#perfil h3 {
+h4 {
     color: #5EBC8F;
-    margin-top: 0;
-    margin-left: 175px;
+    margin: 0 auto 0px 140px;
 }
 
 .perfil-container {
     display: grid;
     grid-template-columns: 2fr 3fr 1fr;
+    margin-bottom: 200px;
 }
 
 .perfil-container div {
@@ -175,25 +233,87 @@ button a {
 }
 
 .perfil-dates {
-    border: 1px solid black;
     text-align: start;
     margin-right: 10px;
+}
+
+.personal-dates {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 5px;
+}
+
+.perfil-dates img {
+    height: 20px;
+    width: auto;
+    margin-right: 7px;
+}
+
+.perfil-dates span {
+    font-weight: 600;
+}
+
+
+.perfil-dates p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.perfil-information {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.perfil-information p {
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .perfil-education {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    border: 1px solid black;
     margin-right: 10px;
 }
 
+#ungs {
+    margin-bottom: 0;
+}
+
+#periodo {
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+.education span {
+    color: #5EBC8F;
+}
+
+.education img {
+    height: 30px;
+    width: auto;
+}
+
+.education-flex {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.education-flex p {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
 .education button {
-    border: 1px solid black;
+    border: 1px solid #334569;
     border-radius: 5px;
+    padding: 5px 20px 5px 20px;
 }
 
 .education button a{
-    color: black;
+    color: #334569;
 }
 
 .cv {
@@ -210,18 +330,31 @@ button a {
     margin-bottom: 5px;
 }
 
-.perfil-skills {
-    border: 1px solid black;
+.cv button {
+    color: white;
+    padding: 5px 35px 5px 35px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #334569;
+    margin-top: 10px;
 }
 
 .perfil-skills h1 {
+    height: 25px;
     margin-bottom: 1px;
     font-weight: 400;
+    font-size: 20px;
 }
+
 
 .perfil-skills p {
     color: #5EBC8F;
     margin: 0;
+    margin-left: 10px;
+}
+
+#perfil{
+    border-bottom: 40px solid #5EBC8F;
 }
 
 
@@ -233,6 +366,7 @@ button a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 50px ;
+    margin-top: 50px;
 }
 
 .project-item {
@@ -263,8 +397,10 @@ button a {
 }
 
 .contact-text {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .contact-text p {
@@ -292,7 +428,7 @@ footer {
     padding: 0 10px;
     height: 75px;
     background-color: white;
-    border-top: 30px solid #FAA039;
+    border-top: 30px solid #5EBC8F;
 }
 
 footer a {

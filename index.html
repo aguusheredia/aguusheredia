@@ -27,7 +27,7 @@
                         <span>></span><a href="#project" alt="">Proyectos</a>
                     </li>
                     <li>
-                        <a href="#contact" alt="">Contacto</a>
+                        <span>></span><a href="#contact" alt="">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -44,26 +44,68 @@
             <h2>{ I'm a developer }</h2>
             <h1>Programar sin fronteras</h1>
             <button ><a href="#project">Proyectos</a></button>
+            <div class = "hero-flex">
+                <div class="hero-flex-button">
+                    <button> <a href="#contact">Ir a mis redes</a></button>
+                </div>
+                <p class="hero-mayor">[</p>
+                <div class="hero-flex-text">
+                    <p>¿Me quer&eacute;s contactar?</p>
+                    <span>Revisa mis redes sociales</span>
+                </div>
+                <img src="images/phone.png" alt="phone">
+                <div class="hero-wsp">
+                    <p>+54 11 3075 1465</p>
+                </div>
+            </div>
         </Section>
     
         <!-- Finish hero -->
         <!-- Start Perfil -->
 
         <section id="perfil"> 
-            <h1><span>[ </span>Sobre mí<span>_</span></h1>
-            <h3>Conoceme un poco más</h3>
+            <div class="title">
+                <span>[</span>
+                <h1>Sobre mí</h1>
+                <p></p>
+            </div>
+            <h4>Conoceme un poco más</h4>
+            <p></p>
+            <p></p>
             <div class="grid-container perfil-container">
                 <div class="perfil-dates">
-                    <p>Agust&iacute;n Leonardo Heredia</p>
-                    <p>15/08/1996</p>
-                    <p>San Miguel - Buenos Aires</p>
-                    <p>Pro-activo</p>
-                    <p>Resolutivo</p>
+                    <div class="personal-dates">
+                        <img src="images/user.png">
+                        <p><span>  Agust&iacute;n Leonardo Heredia</span></p>
+                    </div>
+                    <div class="personal-dates">
+                        <img src="images/calendar.png">
+                        <p>15/08/1996</p>
+                    </div>
+                    <div class="personal-dates">
+                        <img src="images/ubicacion.png">
+                        <p>San Miguel - Buenos Aires</p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <div class="perfil-information">
+                        <p>El objetivo de este sitio web es <span>presentarme</span>
+                            y demostrar mis <span>habilidades de desarrollador.</span></p>
+                        <p>cuento con un gran conocimiento con el sistema de <span>control de versiones git</span>, y
+                            particularmente uso mi cuenta de <span>GitHub.</span></p>
+                        <p>También cuento con experiencia en <span>línea de comando Linux</span>, y muy pronto tendré más
+                            recursos para contarles!!!</p>
+                        <p>Autodidacta, pro-activo, resolutivo.</p>
+                        <p>Apasionado por la tecnología.</p>
+                    </div>
                 </div>
                 <div class="perfil-education">
                     <div class="education">
-                        <p>Universidad Nacional de General Sarmiento</p>
-                        <span>2017 - actualidad / Licenciatura en sistemas</span>
+                        <div class="education-flex">
+                            <img src="images/university.png">
+                            <p id="ungs">Universidad Nacional de General Sarmiento</p>
+                        </div>
+                        <span id="periodo">2017 - actualidad / Licenciatura en sistemas</span>
                         <p>+ <span>Autodidacta en plataformas virtuales</span></p>
                         <p>+ <span>Actualmente soy un estudiante Platzi Expert+</span></p>
                         <p></p>
@@ -75,7 +117,7 @@
                     </div>
                 </div>
                 <div class="perfil-skills">
-                    <h1>>Skills</h1>
+                    <h1>< Skills</h1>
                     <p>Java</p>
                     <p>Kotlin</p>
                     <p>Android Studio</p>
@@ -84,15 +126,21 @@
                     <p>CSS3</p>
                     <p>JavaScript</p>
                     <p>Sql</p>
-                    <p>Git</p>
                 </div>
             </div>
 
         </section>
 
         <!-- Finish Perfil  -->
-        <h2 id="project">Proyectos</h2>
+
         <!-- Start Project -->
+        <div class="title">
+            <span>[</span>
+            <h1>Proyectos</h1>
+            <p></p>
+        </div>
+        <h4>Conoce mi potencial</h4>
+
         <section class="grid-container project" id="project">
             <div class="project-item">
                 <h3>Proyecto tittle</h3>
@@ -173,7 +221,7 @@
         <!-- Start contact  -->
         <section class="contact" id="contact">
             <div class="grid-container contact-text">
-                <p class="contact-text-m320"> B&uacute;scame en mis redes</p>
+                <p class="contact-text-m320"> B&uacute;scame en redes</p>
                 <p class="contact-text-320">Mis redes</p>
             </div>
             <div class="grid-container contact-icons">
