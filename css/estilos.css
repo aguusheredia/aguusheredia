@@ -391,10 +391,25 @@ h4 {
  /* Contact  */
 
 .contact{
-    background-color: #909090;
+    background-color: #334569;
     width: auto;
     padding: 20px;
 }
+
+.contact .title {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.contact .title h1 {
+    color: white;
+    font-weight: 400;
+}
+
+.contact h4 {
+    margin-left: 50px;
+}
+
 
 .contact-text {
     font-size: 1.5em;
@@ -408,9 +423,15 @@ h4 {
 }
 
 .contact-icons{
+    margin-top: 50px;
     text-align: center;
     display: flex;
     justify-content: space-between;
+}
+
+.icon {
+    font-weight: 400;
+    color: white;
 }
 
 .contact-icons a {
@@ -452,19 +473,22 @@ footer img {
 
 @media screen and (max-width: 767px){
     .perfil-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
+        display: block;
     }
 
     .perfil-dates {
-        border: 1px solid black;
         margin: 0 20px 10px;
+        align-content: center;
     }
-    
+
     .perfil-text {
         border: 1px solid black;
         margin: 0 20px 10px;
+    }
+
+    .perfil-skills {
+        display: block;
+        text-align: center;
     }
     
    
