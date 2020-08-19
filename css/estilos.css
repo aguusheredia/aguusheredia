@@ -49,6 +49,7 @@ h2 {
 /* Header  */
 
 header{
+    width: 100%;
     display: flex;
     background-color: white;
     color: black;
@@ -381,7 +382,7 @@ h4 {
 .project-button {
     padding: 10px 75px;
     font-size: 1.2em;
-    background-color: #60E315;
+    background-color: #5EBC8F;
     border: 1px solid black;
     border-radius: 50px;
 }
@@ -468,7 +469,9 @@ footer img {
 /* Media querys */
 
 @media screen and (max-width: 1024px){
-
+    header {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -486,6 +489,10 @@ footer img {
         margin: 0 20px 10px;
     }
 
+    .cv {
+        width: 100%;
+    }
+
     .perfil-skills {
         display: block;
         text-align: center;
@@ -499,6 +506,34 @@ footer img {
 
     .project-item {
         margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    .hero-flex{
+        width: auto;
+        justify-content: center;
+    }
+
+    .title {
+        margin-left: 30px;
+    }
+
+    h4 {
+        margin-left: 70px;
+    }
+
+    .hero-wsp{
+        display: none;
+    }
+
+    .icon p {
+        display: none;
+    }
+
+    .icon {
+        font-size: 28px;
     }
 }
 
@@ -524,13 +559,8 @@ footer img {
     }
 
     .contact{
-        background-color: #909090;
         width: auto;
         padding: 20px 40px;
-    }
-
-    .contact-icons {
-        font-size: .5em;
     }
 
     .contact-icons a {
@@ -541,9 +571,24 @@ footer img {
         justify-content: center;
     }
 
+    .iu {
+        display: none;
+    }
+
+    .mailto {
+        font-weight: 500;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
+    .hero-mayor{
+        display: none;
+    }
+
+    .hero-flex-text{
+        display: none;
+    }
     .contact-text-320 {
         display: block;
     }
@@ -553,7 +598,6 @@ footer img {
     }
 
     .contact{
-        background-color: #909090;
         width: auto;
         padding: 20px;
     }
