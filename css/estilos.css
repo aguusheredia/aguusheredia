@@ -49,7 +49,7 @@ h2 {
 /* Header  */
 
 header{
-    width: 100%;
+    width: auto;
     display: flex;
     background-color: white;
     color: black;
@@ -468,11 +468,6 @@ footer img {
 
 /* Media querys */
 
-@media screen and (max-width: 1024px){
-    header {
-        width: auto;
-    }
-}
 
 @media screen and (max-width: 767px){
     .perfil-container {
