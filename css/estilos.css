@@ -49,7 +49,6 @@ h2 {
 /* Header  */
 
 header{
-    width: auto;
     display: flex;
     background-color: white;
     color: black;
@@ -468,6 +467,11 @@ footer img {
 
 /* Media querys */
 
+@media screen and (max-width: 1024px){
+    header {
+        width: auto;
+    }
+}
 
 @media screen and (max-width: 767px){
     .perfil-container {
@@ -504,7 +508,19 @@ footer img {
     }
 }
 
+@media screen and (max-width: 680px){
+    header ul{
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 560px){
+
+    header ul{
+        display: block;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
 
     .hero-flex{
         width: auto;
@@ -542,11 +558,6 @@ footer img {
     }
     .header-name {
         display: none;
-    }
-
-    header ul{
-        display: block;
-        margin-bottom: 0;
     }
     
     h2 {
