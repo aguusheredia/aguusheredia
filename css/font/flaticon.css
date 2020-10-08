@@ -37,7 +37,7 @@ margin-left: 0;
 .flaticon-gorjeo:before { content: "\f104"; }
 .flaticon-github:before { content: "\f105"; }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 800px){
   [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
   [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
     font-family: Flaticon;

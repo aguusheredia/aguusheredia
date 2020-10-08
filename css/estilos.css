@@ -137,7 +137,7 @@ li {
 }
 
 .hero-flex {
-    width: 750px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,9 +473,17 @@ footer img {
     }
 }
 
+@media screen and (max-width: 800px){
+   .project {
+       grid-template-columns: 1fr 1fr;
+   }
+}
+
 @media screen and (max-width: 767px){
+
     .perfil-container {
         display: block;
+        margin-bottom: 50px;
     }
 
     .perfil-dates {
@@ -489,7 +497,8 @@ footer img {
     }
 
     .cv {
-        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .perfil-skills {
@@ -595,6 +604,15 @@ footer img {
     .hero-flex-text{
         display: none;
     }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
     .contact-text-320 {
         display: block;
     }
@@ -608,3 +626,5 @@ footer img {
         padding: 20px;
     }
 }
+
+/* Media querys */
